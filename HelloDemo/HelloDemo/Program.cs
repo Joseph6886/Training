@@ -17,8 +17,8 @@ namespace HelloDemo
             Console.ReadKey();
 
             Console.WriteLine("It is raining today");
-            //Console.WriteLine("It is raining today");
-            //Console.ReadKey();
+            Console.WriteLine("It is raining today");
+            Console.ReadKey();
             WriteLine("Lunch time soon");
             WriteLine("Weekend soon!");
             ReadKey();
