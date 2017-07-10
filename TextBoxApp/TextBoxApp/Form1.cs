@@ -34,18 +34,20 @@ namespace TextBoxApp
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        
-       
-       
+
+
+
         {
             MessageBox.Show("It's almost lunch time");
+
             string words2 = textBox1.Text;
             label2.Text = words2;
-
-            private void Form1_Load(object sender, EventArgs e)
-
-
         }
+
+             
+
+
+        
 
         private void btn3_Click(object sender, EventArgs e)
 
