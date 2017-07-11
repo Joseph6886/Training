@@ -18,7 +18,7 @@ namespace ConsolePractice1
             Console.WriteLine("What is your age?");
             string AgeNumber = Console.ReadLine();
 
-            Console.WriteLine("What is your street name?"");
+            Console.WriteLine("What is your street name?");
             string StreetName = Console.ReadLine();
 
             Console.WriteLine("What is your email address");
