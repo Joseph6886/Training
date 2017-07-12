@@ -13,11 +13,20 @@ namespace TernaryPractice1
             Console.WriteLine("What is your favorite sport?");
             string sport = Console.ReadLine().ToLower();
 
-            string favsport = (sport == "Hockey" || sport == "football") ? "Great Choice" : "Bad Choice";
+            string favsport = (sport == "hockey" || sport == "football") ? "Great Choice" : "Bad Choice";
 
             Console.WriteLine(favsport);
             Console.ReadLine();
 
+            Console.WriteLine("What kind of foods do you like");
+            string food = Console.ReadLine().ToLower();
+            Console.WriteLine("What kind of other foods do you like");
+            string sports = Console.ReadLine().ToLower();
+
+            string foodchoice = (food == "chicken" && sports == "shrimp") ? "Good Choice" : "Bad Choice";
+            Console.WriteLine(foodchoice);
+            Console.WriteLine($"Your first choice was {food}, your second choice was { sports}");
+            Console.ReadLine();
 
 
         }
