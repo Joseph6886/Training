@@ -16,7 +16,7 @@ namespace IfElsePracticeNumbers4
             if(firstnum > 0 && firstnum <= 10)
             { Console.WriteLine("You're just a kid");
             }
-            else if (firstnum > 11 && firstnum <=20)
+            else if (firstnum >= 11 && firstnum <=20)
             {
                 Console.WriteLine("You are in your middle years");
 

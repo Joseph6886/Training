@@ -40,6 +40,8 @@ namespace IfElseVersion4
             }
 
             Console.ReadLine();
+            Console.WriteLine($"Here's your change. ${firstnum}");
+            Console.ReadLine();
 
 
 
