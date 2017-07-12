@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
+
 
 namespace IfElsePracticeNumber2
 {
@@ -32,6 +34,12 @@ namespace IfElsePracticeNumber2
             }
             Console.ReadKey();
 
+            //WriteLine("Enter a number:");
+            //double var1 = Convert.ToDouble(ReadLine());
+            //WriteLine("Enter another number:");
+            //double var2 = Convert.ToDouble(ReadLine());
+            //WriteLine("Enter a third number");
+            //decimal dec3 = Convert.ToDecimal(ReadLine());
 
 
         }
