@@ -10,48 +10,29 @@ namespace SwitchOrCase_Version1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What is your favorite color?");
-            string color = Console.ReadLine();
+            Console.WriteLine("What is your favorite car?");
+            string car = Console.ReadLine().ToLower();
 
-            switch(color)
+            switch(car)
             {
-                case "red":
-                    Console.WriteLine("Red is an ok color");
+                case "mustang":
+                    Console.WriteLine("Mustang's are sharp!");
                     break;
-
+                case "corvette":
+                    Console.WriteLine("Corvette's are fast!");
+                    break;
+                case "pinto":
+                    Console.WriteLine("Pinto's are junk!");
+                    break;
                 default:
-                    Console.WriteLine("We don't understand your answer");
+                    Console.WriteLine("That car is a lemon!");
                     break;
                     
 
             }
             Console.ReadLine();
             
-            int foodlike;
-            Console.WriteLine("What's your favorite pasta dish \n 1. Lasagne \n 2. Spaghetti \n 3. Ravioli");
-            // int foodchoice = Convert.ToInt32(ReadLine().ToUpper());
-            string foodchoice = Console.ReadLine();
-            // int foodchoice = int.Parse(ReadLine());
-            int.TryParse(foodchoice, out foodlike);
-            switch (foodlike)
-            { case 1:
-                    Console.WriteLine("Lasagne is fantastic!!!");
-                    break;
-                case 2:
-                    Write("Spaghetti is delicious");
-                    break;
-                case 3:
-                    Console.Write("Ravioli was invented by Chef Boyardi");
-                    break;
-                default:
-                    Write("That is not a pasta choice!");
-                    break; 
-                    
-
-                    
-                    
-            }
-            Console.ReadLine();
+            
         }
     }
 }
