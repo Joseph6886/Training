@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfPractice1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPractice1"
+        mc:Ignorable="d"
+        Title="Tri-C Class" Height="350" Width="525" Background="#FFE0C59E">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button x:Name="Action" Content="Press me" HorizontalAlignment="Left" Margin="203,155,0,0" VerticalAlignment="Top" Width="75" Click="Action_Click"/>
+        <TextBox x:Name="Txtbox1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="yes!!!" VerticalAlignment="Top" Width="120" Margin="187,68,0,0" Background="#FFB7C9D6" TextChanged="Txtbox1_TextChanged"/>
+        <Label x:Name="lbltext" Content="." HorizontalAlignment="Left" Margin="223,207,0,0" VerticalAlignment="Top" Width="55"/>
+        <Button x:Name="second" Content="Second" HorizontalAlignment="Left" Margin="45,102,0,0" VerticalAlignment="Top" Width="75" Click="second_Click">
+            <Button.Background>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage UriSource="https://www.google.com/search?q=dragon&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwj2iNO8-obVAhXJ1IMKHQNCBXMQ_AUIBigB&amp;biw=1366&amp;bih=613#tbm=isch&amp;q=nfl&amp;imgrc=IbdRIV92NiYYxM:"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BtnThree" Content="Warp to page 3" HorizontalAlignment="Left" Margin="157,102,0,0" VerticalAlignment="Top" Width="208" FontSize="24" Click="BtnThree_Click"/>
+
+    </Grid>
+</Window>
