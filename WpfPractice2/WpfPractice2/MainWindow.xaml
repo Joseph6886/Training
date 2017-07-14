@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfPractice2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPractice2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btnChange" Content="Change Button" HorizontalAlignment="Left" Margin="190,134,0,0" VerticalAlignment="Top" Width="173" FontSize="24" RenderTransformOrigin="0.5,0.5" Click="btnChange_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="1.488"/>
+                    <RotateTransform Angle="-1.721"/>
+                    <TranslateTransform Y="0.974"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="46" Margin="201,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" FontSize="24"/>
+        <Label x:Name="lblWords" Content="" HorizontalAlignment="Left" Margin="201,181,0,0" VerticalAlignment="Top" FontSize="24" Width="158" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="btnPop" Content="2nd Window" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" Margin="10,149,0,0" Height="49" FontSize="18" Click="btnPop_Click"/>
+
+    </Grid>
+</Window>
