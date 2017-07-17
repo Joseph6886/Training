@@ -19,7 +19,7 @@ namespace LoopArrayIf1
                 if (pieces[d] == 51)
                 {
                     
-                    Console.WriteLine($"We found 51");
+                    Console.WriteLine("We found 51");
                     break;
 
                 }
@@ -47,6 +47,19 @@ namespace LoopArrayIf1
             Console.WriteLine("We were kicked out of the loop!!!");
             Console.ReadLine();
 
+            foreach (string car in cars)
+            {
+                Console.WriteLine(car);
+
+
+            }
+            Console.ReadLine();
+            foreach (int piece in pieces)
+            {
+                Console.WriteLine($"These are the values of the pieces array {piece}");
+
+            }
+            Console.ReadLine();
 
 
 
