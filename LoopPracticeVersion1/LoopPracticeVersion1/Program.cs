@@ -35,10 +35,10 @@ namespace LoopPracticeVersion1
 
             for (int k = 0; k < stars.Length; ++k)
             {
-                //Console.WriteLine($"The value of i is {k}");
+                Console.WriteLine($"The value of i is {k}");
 
 
-                Console.WriteLine("The stars are " + (stars[k]));
+                //Console.WriteLine("The stars are " + (stars[k]));
 
             }
             Console.ReadLine();
