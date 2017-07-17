@@ -38,8 +38,11 @@ namespace LoopPracticeVersion2
                 Console.WriteLine($"The value of the letters array are { (letters[m])}");
             }
             Console.ReadLine();
-
-
+            for (int m = 0; m < letters.Length; ++m)
+            {
+                Console.Write((letters[m]));
+            }
+            Console.ReadLine();
 
 
 
