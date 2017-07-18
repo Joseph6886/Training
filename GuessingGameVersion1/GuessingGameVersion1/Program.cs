@@ -13,12 +13,16 @@ namespace GuessingGameVersion1
 
             Program p = new Program();
             // Random rnd = new Random();
+            Vacation v = new Vacation();
             Console.WriteLine("Hello world");
 
             p.Working();
             Talking();
             Playing();
             Running();
+
+            v.Bahamas();
+            v.Cancun();
 
 
             Console.WriteLine(" I'm back in the main method!!!");
