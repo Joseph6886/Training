@@ -20,6 +20,8 @@ namespace LoopArraySum1
                 Console.WriteLine($"The value of q currently is {(nums[q])}");
                 total += nums[q];
 
+                //the line above is what addes the loop sum- line 22
+
             }
             Console.WriteLine($"The total value of the nums array is { total}");
 
