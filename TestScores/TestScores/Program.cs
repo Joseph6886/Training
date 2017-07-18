@@ -29,22 +29,32 @@ namespace TestScores
             Console.WriteLine("This score is valid");
             Console.ReadLine();
 
-            for (int i = 1; i <= 100; i++)
+            //for (int i = 1; i <= 100; i++)
+            //{
+            //    bool fizz = i % 3 == 0;
+            //    bool buzz = i % 5 == 0;
+
+            //    if (fizz && buzz)
+            //        Console.WriteLine("FizzBuzz");
+            //    else if (fizz)
+            //        Console.WriteLine("Fizz");
+            //    else if (buzz)
+            //        Console.WriteLine("Buzz");
+
+            //    else
+            //        Console.WriteLine(i);
+            //    Console.ReadLine();
             {
-                bool fizz = i % 3 == 0;
-                bool buzz = i % 5 == 0;
+                for (int i = 0; i < 5; i++)
+                {
+                    for (int j = 0; j <= i; j++)
+                    {
+                        Console.Write("1");
+                    }
+                    Console.WriteLine();
+                    Console.ReadLine();
 
-                if (fizz && buzz)
-                    Console.WriteLine("FizzBuzz");
-                else if (fizz)
-                    Console.WriteLine("Fizz");
-                else if (buzz)
-                    Console.WriteLine("Buzz");
-
-                else
-                    Console.WriteLine(i);
-                Console.ReadLine();
-
+                }
 
             }
 
