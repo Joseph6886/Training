@@ -35,6 +35,7 @@ namespace OutputParametersPractice1
 
             firstNum = firstNum + secondNum;
             secondNum = (firstNum - secondNum) * secondNum;
+            
 
 
 
