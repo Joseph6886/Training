@@ -18,16 +18,16 @@ namespace BankingProject2
             }
             public double deposit()
             {
-                //double NewBalance;
+                double NewBalance;
                 double deposit;
                 Console.WriteLine("Please enter amount to deposit");
                 string number2 = Console.ReadLine();
                 double.TryParse(number2, out deposit);
-                //NewBalance = balance + deposit;
-                //balance = NewBalance;
-                ////balance = balance + deposit;
-                balance += deposit;
-                return balance;
+                NewBalance = balance + deposit;
+                balance = NewBalance;
+                //balance = balance + deposit;
+                //balance += deposit;
+                return NewBalance;
             }
             public double withdrawel()
             {
@@ -38,8 +38,9 @@ namespace BankingProject2
                 string number = Console.ReadLine();
                 double.TryParse(number, out withdrawel);
                 NewBalance = balance - withdrawel;
-                balance -= withdrawel;
-                return balance;
+                balance = NewBalance;
+                // balance -= withdrawel;
+                return NewBalance;
             }
             
 
@@ -52,7 +53,7 @@ namespace BankingProject2
             Account bank = new Account();
             do
             {
-        
+
                 Console.WriteLine("Press d for deposit, or press w for withdrawel, or n to exit");
 
                 balance = Console.ReadLine();
