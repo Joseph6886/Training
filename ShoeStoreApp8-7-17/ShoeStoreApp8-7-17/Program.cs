@@ -71,13 +71,14 @@ namespace ShoeStoreApp8_7_17
             Console.ReadLine();
             foreach (Shoes item in shoeList)
             {
-                if (item == shoe1)
+                if (item.Store == "nike air2")
                 {
-                    Console.WriteLine("Contains shoe that I like");
+                    Console.WriteLine($"Contains {item.Store}");
                 }
 
-                Console.ReadLine();
+
             }
+            Console.ReadLine();
 
 
 
