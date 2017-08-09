@@ -15,6 +15,7 @@ namespace ExceptionPractice1
             int mpg;
 
             Program p = new Program();
+            p.StringError();
             p.NewError();
             p.ArrayError();
 
@@ -98,6 +99,25 @@ namespace ExceptionPractice1
 
 
 
+        }
+        public void StringError()
+        {
+            try
+            {
+                int x = 100, y = 0, done;
+
+                done = x / y;
+
+            }
+            catch(Exception ex)
+        
+            {
+                Console.WriteLine(ex.ToString());
+                Console.WriteLine("We're inside the to string exception");
+
+            }
+            Console.WriteLine("Our code kept going!!!");
+            Console.ReadLine();
         }
     }
 }
