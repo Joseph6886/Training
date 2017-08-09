@@ -63,7 +63,7 @@ namespace ExceptionPractice1
             }
             catch(IndexOutOfRangeException i )
             {
-
+                Console.WriteLine("You broke our array program");
                 Console.WriteLine(i.Message);
             }
             Console.WriteLine("we are still running");
@@ -83,6 +83,12 @@ namespace ExceptionPractice1
             {
                 Console.WriteLine("Our code had an error...but we don't know what happened");
 
+
+            }
+            finally //runs no matter what!!!
+            {
+                Console.WriteLine("");
+                Console.Clear();
 
             }
             Console.ReadLine();
