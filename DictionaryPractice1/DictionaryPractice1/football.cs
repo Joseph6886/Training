@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DictionaryPractice1
 {
-    class football
+    class Football
     {
         public int TeamID { get; set; }
 
@@ -21,6 +21,11 @@ namespace DictionaryPractice1
         public void PrintClub()
         {
             Console.WriteLine($"The {TeamName} with a team ID of {TeamID} in the {Conference} belong to the {Division} is worth ${NetWorth}");
+
+        }
+        public void PrintClub2()
+        {
+            Console.WriteLine($"The {TeamName} with a team ID of {TeamID} in the {Conference} are the best");
 
         }
 
