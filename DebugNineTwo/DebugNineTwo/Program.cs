@@ -10,6 +10,11 @@ namespace DebugNineTwo
     {
         static void Main(string[] args)
         {
+            FixedDebugNine2.DebugNine2();
+
+
+
+
         }
     }
 }

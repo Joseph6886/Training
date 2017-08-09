@@ -4,29 +4,30 @@
 using static System.Console;
 class FixedDebugNine2
 {
-   static void Main()
+   public static void DebugNine2()
    {
-      Breakfast special = new Breakfast("French toast, 4.99);
-      //Display the info about breakfast
-      WriteLine(INFO);
+        Breakfast special = new Breakfast("French toast", 4.99);
+        //Display the info about breakfast
+        WriteLine(special.INFO);
       // then display today's special
       WriteLine("Today we are having {0} for {1}",
-         special.name, special.Price.ToString("C2"));
-  }
+         special.Name, special.Price.ToString("C2"));
+        ReadLine();
+  }  
 }
 class Breakfast
 {
    public string INFO = 
       "Breakfast is the most important meal of the day.";
    private string name;
-   private double Price;
+   private double price;
    // Breakfast constructor requires a
    // name, e.g "French toast", and a price
    public Breakfast(string name, double price)
    {
-       name = name;
-       price = price;
+       Name = name;
+       Price = price;
    }
-   public string Name {get; set}
-   public double Price {get; set}
+    public string Name { get; set; }
+    public double Price { get; set; }
 }
