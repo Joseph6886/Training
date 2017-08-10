@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MultpleInheritence1;
 
-namespace DepartmentStoreApp
+namespace Extra
 {
-    class Program
+    public class Begin
     {
         static void Main(string[] args)
         {
 
-            Console.ReadLine();
-            Console.WriteLine("");
+
 
         }
     }

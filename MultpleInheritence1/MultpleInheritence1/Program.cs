@@ -4,15 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DepartmentStoreApp
+namespace MultpleInheritence1
 {
     class Program
     {
         static void Main(string[] args)
         {
 
+            Apprentice a = new Apprentice();
+
+            a.Display();
+
             Console.ReadLine();
-            Console.WriteLine("");
+
 
         }
     }
