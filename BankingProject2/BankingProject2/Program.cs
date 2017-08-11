@@ -58,6 +58,7 @@ namespace BankingProject2
 
                 balance = Console.ReadLine();
 
+
                 if (balance == "d")
                 {
                     NewBalance = bank.deposit();
