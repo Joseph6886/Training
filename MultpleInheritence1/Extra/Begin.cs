@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MultpleInheritence1;
+
 
 namespace Extra
 {
@@ -11,9 +11,44 @@ namespace Extra
     {
         static void Main(string[] args)
         {
+            int complete;
+            Console.WriteLine("Hello it's Friday");
+
+            Durango dr = new Durango();
+
+            complete = dr.PerformAddition(80, 100);
+
+            Console.WriteLine(complete);
+            Console.ReadLine();
 
 
 
         }
+
+
+    }
+
+    public class Durango
+    {
+
+        public void Boxer()
+        {
+
+            Console.WriteLine("We work to be the best programmers in the world");
+
+
+        }
+        public int PerformAddition(int x, int y)
+        {
+
+
+
+            return x + y;
+
+
+
+        }
+
+
     }
 }

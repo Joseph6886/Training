@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2281CF95-FEAE-4814-8508-3F937947300D}</ProjectGuid>
+    <ProjectGuid>{E9547D20-C4E6-41B0-AA67-503186E79C7F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MultpleInheritence1</RootNamespace>
-    <AssemblyName>MultpleInheritence1</AssemblyName>
+    <RootNamespace>DebugTen1</RootNamespace>
+    <AssemblyName>DebugTen1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,19 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Apprentice.cs" />
-    <Compile Include="Master.cs" />
+    <Compile Include="DebugTen01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Extra\Extra.csproj">
-      <Project>{667f45d6-3cd3-461f-a425-492621bd5afd}</Project>
-      <Name>Extra</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
