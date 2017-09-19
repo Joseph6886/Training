@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DebugTen1
+namespace DebugEleven1
 {
     class Program
     {
         static void Main(string[] args)
         {
 
-            DebugTen01.TenOne();
+            DebugEleven01.ElevenOne();
+
         }
     }
 }

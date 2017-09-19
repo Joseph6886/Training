@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 8 </title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    "events": [
+    {"location": :San Francisco, CA",
+    "date": "May 1",
+    "map": "img/map-ca.png"   
+    },
+    {"location": "Austiin, TX",
+    "date": "May 15",
+    "map": "img/map-tx.png"
+    },
+    {"location": "New York, NY"'
+    "date": "May 30",
+    "map": "img/map-ny.png"
+    }
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.onload = function() {
+
+    if(xhr.ststaus === 200) {
+        document.getElementById('content').innerHTML = xhr.responseText;
+    }
+    };
+
+    xhr.open('GET', 'data/data.html' , true);
+    xhr.send(null);
+
+
+
+
+
+
+</body>
+</html>
