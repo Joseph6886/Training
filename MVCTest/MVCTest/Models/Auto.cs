@@ -23,7 +23,7 @@ namespace MVCTest.Models
     }
     public class AutoDBContext : DbContext
     {
-        public DbSet<Auto> Auto { get; set; }
+        public DbSet<Auto> Autos { get; set; }
     }
 
 }
