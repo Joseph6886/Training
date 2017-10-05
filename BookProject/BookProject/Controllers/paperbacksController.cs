@@ -15,10 +15,21 @@ namespace BookProject.Controllers
         private paperbackDBContext db = new paperbackDBContext();
 
         // GET: paperbacks
-        public ActionResult Index()
+        public ActionResult Index(string searchstring)
         {
-            return View(db.Paperback.ToList());
+            var Paperbacks = from b in db.Paperback
+                select b;
+
+            if (!String.IsNullOrEmpty(searchstring))
+            {
+                Paperbacks = Paperbacks.Where(s =>s.Title.Contains(searchstring));
+            }
+            return View(Paperbacks);
+
         }
+
+         
+
         public ActionResult Home()
         {
             return View(db.Paperback.ToList());
@@ -31,6 +42,16 @@ namespace BookProject.Controllers
         }
 
         public ActionResult Request()
+        {
+            return View(db.Paperback.ToList());
+        }
+
+        public ActionResult Thanks()
+        {
+            return View(db.Paperback.ToList());
+        }
+
+        public ActionResult Confirmation()
         {
             return View(db.Paperback.ToList());
         }
